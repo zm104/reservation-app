@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing-module';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { AppComponent } from './app.component';
 
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
